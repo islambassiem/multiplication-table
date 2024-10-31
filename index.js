@@ -92,6 +92,7 @@ submit.addEventListener("click", () => {
     result.innerHTML = "Please Submit an answer";
   }
   answer.value = "";
+	answer.classList.add('hidden');
 });
 
 next.addEventListener("click", () => {
@@ -99,6 +100,7 @@ next.addEventListener("click", () => {
   next.classList.add("hidden");
   submit.classList.remove("hidden");
   random();
+	answer.classList.remove('hidden');
 	answer.focus();
 });
 
